@@ -12,6 +12,7 @@ import com.jmart.framework.utils.CodecUtil;
 import com.jmart.framework.utils.JsonMapper;
 import com.jmart.framework.utils.ReflectionUtil;
 import com.jmart.framework.utils.StreamUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 
@@ -33,6 +34,7 @@ import java.util.Map;
 @WebServlet(urlPatterns = "/*" ,
        loadOnStartup = 0
 )
+@Slf4j
 public class DispatcherServlet extends HttpServlet {
 
     @Override
