@@ -1,10 +1,7 @@
 package com.jmart.framework;
 
 import com.jmart.framework.annotation.Controller;
-import com.jmart.framework.helper.BeanHelper;
-import com.jmart.framework.helper.ClassHelper;
-import com.jmart.framework.helper.ControllerHelper;
-import com.jmart.framework.helper.IocHelper;
+import com.jmart.framework.helper.*;
 import com.jmart.framework.utils.ClassUtil;
 
 //集中初始化各个helper
@@ -15,6 +12,7 @@ public class HelperLoader {
         Class<?>[] classList = {
                 ClassHelper.class,
                 BeanHelper.class,
+                AopHelper.class,
                 IocHelper.class,
                 ControllerHelper.class
         };

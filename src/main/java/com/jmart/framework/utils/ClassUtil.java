@@ -29,6 +29,9 @@ public  final class ClassUtil {
       通过权限类名加载类实例
      */
 
+
+
+
     public static  void loadClass(String name ){
         Class<?> clazz;
         try {
@@ -130,7 +133,6 @@ public  final class ClassUtil {
     }
     private  static  void doAddClass(Set<Class<?>> classSet,String className){
         Class<?> clazz = loadClass(className,false);
-        System.out.println(className);
         classSet.add(clazz);
     }
 }

@@ -24,7 +24,6 @@ public class IocHelper {
                 if(ArrayUtils.isNotEmpty(fields)){
                     for (Field field:fields){
                         field.setAccessible(true);
-                        System.out.println(field);
                         if(field.isAnnotationPresent(Inject.class)){
                             Class<?> beanFieldClass = field.getType();
                             Object fieldBean =  beanMap.get(beanFieldClass);
